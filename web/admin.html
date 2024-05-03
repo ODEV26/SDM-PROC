@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Detecciï¿½n de Placas - Administraciï¿½n</title>
+    <!-- Ruta relativa al archivo CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', path='admin.css') }}">
+</head>
+<body>
+    <div class="admin-container">
+        <div class="admin-box">
+            <h1>Administraciï¿½n de Placas</h1>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Buscar placa...">
+            </div>
+            <div id="plate-list">
+                <!-- Los datos de las placas se cargarán aquí mediante JavaScript -->
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', path='admin.js') }}"></script>
+</body>
+</html>
